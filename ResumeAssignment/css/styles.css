@@ -6,7 +6,10 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body {
+body
+
+
+{
     color: #343434;
     margin: 0;
     padding: 0;
@@ -41,7 +44,31 @@ h1,h2 {
     width: 800px;
     margin: 0 auto;
     padding: 60px 0;
-
+}
+#navbar {
+    width: 100%;
+}
+#nav, #nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+}
+#nav a {
+    display: block;
+    width: 130px;
+}
+#nav li {
+    float: left;
+    width: 150px;
+}
+#nav li ul {
+    position: absolute;
+    width: 130px;
+    left: -999em;
+}
+#nav li:hover ul {
+    left: auto;
 }
 
 /*Profile
@@ -49,6 +76,14 @@ h1,h2 {
 header {
     background: #2f3061;
     color: #f7fff7;
+}
+#nav .btn {
+    color: #f7fff7;
+    background: #a1c6d7;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 30px;
+    display: inline-block;
 }
 
 
