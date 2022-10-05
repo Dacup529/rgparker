@@ -15,8 +15,22 @@
         <div class="content-wrap">
           <h1>Reese Parker</h1>
           <h2>Graphic Design Student</h2>
-
           <p>Striving to create a better word through technology and creativity</p>
+          <picture>
+            <source media="(max-width: 450px)" srcset="images/purpleportrait450.png">
+            <source media="(max-width: 750px)" srcset="images/purpleportrait750.png">
+            <source media="(max-width: 1000px)" srcset="images/purpleportrait1000.png">
+            <source srcset="images/purpleportrait750.png">
+            <img src="images/purpleportrait450.png"
+            srcset="images/purpleportrait450.png 450w,
+            images/purpleportrait750.png 750w,
+            images/purpleportrait1000.png 1000w"
+            sizes="(max-width: 450px) 200px,
+            (max-width: 750px) 400px,
+            (max-width: 1000px) 800px"
+            
+            alt="portrait of author with boyfriend">
+          </picture>
         </div>
       </header>
           <div id="navbar">
