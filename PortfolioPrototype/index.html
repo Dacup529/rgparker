@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Playfair+Display&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+<style>
+.header { grid-area: header; }
+.navbar { grid-area: menu; }
+.project-port { grid-area: main; }
+.work { grid-area: right; }
+.ed { grid-area: ed; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'ed footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2f3061;
+  padding: 10px;
+}
+
+
+</style>
+</head>
+<body>
+ <!-- ***********************  ABOUT / PROFILE  *********************** -->
+ <div class="grid-container">
+  <div class="header">
+          <h1>Reese Parker</h1>
+          <h2>Graphic Design Student</h2>
+          <p>Striving to create a better word through technology and creativity</p>
+          <picture>
+            <source media="(max-width: 450px)" srcset="images/purpleportrait450.png">
+            <source media="(max-width: 750px)" srcset="images/purpleportrait750.png">
+            <source media="(max-width: 1000px)" srcset="images/purpleportrait1000.png">
+            <source srcset="images/purpleportrait750.png">
+            <img src="images/purpleportrait450.png"
+            srcset="images/purpleportrait450.png 450w,
+            images/purpleportrait750.png 750w,
+            images/purpleportrait1000.png 1000w"
+            sizes="(max-width: 450px) 200px,
+            (max-width: 750px) 400px,
+            (max-width: 1000px) 800px"
+            alt="portrait of author with boyfriend">
+          </picture>
+        </div>
+
+        
+        
+  <div id="navbar">
+  <ul id="nav">
+      <li><a class="btn" href="#">Home</a></li>
+      <li><a class="btn" href="#">Projects</a>
+        <ul>
+          <li><a class="btn" href="#">Melon Pups</a></li>
+          <li><a class="btn" href="#">Think Big</a></li>
+        </ul></li>
+      <li><a class="btn" href="#">Experience</a></li>
+      <li><a class="btn" href="#">Education</a></li>
+      <li><a class="btn" href="#">Contact</a></li>
+    </ul></nav></div>
+    
+    
+  <div class="project-port"><!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+
+          <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-item">
+          <picture>
+            <source media="(max-width: 450px)" srcset="images/Melonpupsdogtreats450.png">
+            <source media="(max-width: 750px)" srcset="images/Melonpupsdogtreats750.png">
+            <source media="(max-width: 1000px)" srcset="images/Melonpupsdogtreats1000.png">
+            <source srcset="images/Melonpupsdogtreats450.png">
+            <img src="images/Melonpupsdogtreats450.png"
+            srcset="images/Melonpupsdogtreats450.png 450w,
+            images/Melonpupsdogtreats750.png 750w,
+            images/Melonpupsdogtreats1000.png 1000w"
+            sizes="(max-width: 450px) 200px,
+            (max-width: 750px) 400px,
+            (max-width: 1000px) 800px"
+            alt="Melon Pups Dog Treats Design">
+            </picture>
+            <h3>Melon Pups</h3>
+            <p>I was to create a brand of dog treats that fit a summer theme.</p>
+            <a class="btn" href="#" target="_blank">View project / case study</a>
+          </section>
+          <section class="project-item">
+          <picture>
+            <source media="(max-width: 450px)" srcset="images/Thinkbigprojectlayout450.png">
+            <source media="(max-width: 750px)" srcset="images/Thinkbigprojectlayout750.png">
+            <source media="(max-width: 1000px)" srcset="images/Thinkbigprojectlayout1000.png">
+            <source srcset="images/Thinkbigprojectlayout450.png">
+            <img src="images/Thinkbigprojectlayout450.png"
+            srcset="images/Thinkbigprojectlayout450.png 450w,
+            images/Thinkbigprojectlayout750.png 750w,
+            images/Thinkbigprojectlayout1000.png 1000w"
+             alt="Think Big Conference Design Layout">
+            <h3>Think Big Design Sheet</h3>
+            <p>I was to create a design sheet for the Think Big Conference.</p>
+            <a class="btn" href="#" target="_blank">View project / case study</a>
+          </section>
+          <!-- End of Project block. -->
+        </div></div>  
+  
+  
+  <div class="work">
+  <!-- ***********************  WORK EXPERIENCE  *********************** -->
+  <section class="work-experience">
+    <div class="content-wrap item-details divider">
+      <h2>Work Experience</h2>
+
+      <!-- Copy this whole <section> block to add more jobs. -->
+      <section class="job-item">
+        <div class="job-details">
+        <h3>Customer Experience Specialist</h3>
+        <p>Best Buy</p>
+        <p>July 7th 2021- July 15th 2022</p>
+        </div>
+        <div class="job-summary">
+
+        </div>
+      </section>
+      <section class="job-item">
+        <div class="job-details">
+        <h3>Digital Sales</h3>
+        <p>Best Buy</p>
+        <p>January 1st 2021- July 15th 2022</p>
+        </div>
+        <div class="job-summary">
+        
+        </div>  
+      </section>
+      <section class="job-item">
+        <div class="job-details">
+        <h3>Associate</h3>
+        <p>Panera Bread</p>
+        <p>January 1st 2021- July 7th 2021</p>
+        </div> 
+        <div class="job-summary"> 
+
+        </div>
+      </section>
+      <section class="job-item">
+        <div class="job-details">
+        <h3>Seasonal Produce Stand Management</h3>
+        <p>Baretts Produce</p>
+        <p>August 2019- December 2019 </p>
+        </div>
+        <div class="job-summary">  
+
+        </div>  
+      </section>
+      <!-- End of Job block. -->
+    </div>
+</div>
+
+<div class="ed">
+    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+    <section class="education">
+        <div class="content-wrap item-details">
+          <h2>Education</h2>
+
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Wake Tech Community College - Raleigh, NC</h3>
+            <p>Graphic Design Program, 2017-Present</p>
+            <p>Currently enrolled in the Graphic Design program and hoping to achieve an associates degree</p>
+          </section>
+          <section>
+            <h3>Heritage High School - Wake Forest, NC</h3>
+            <p>Class of 2017 Graduate</p>
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
+</div>
+
+
+  <div class="footer">
+    <section class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="contact-list">
+          <li><a href="mailto:dacup529@gmail.com">dacup529@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/dacup529/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/RGParkerDesign" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/reeseparkergda/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/reese.parker.520" target="_blank">Facebook</a></li>
+        </ul>
+    </section>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
